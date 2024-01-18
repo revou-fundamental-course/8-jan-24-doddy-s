@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Poppins;
+    src: url(https://cdn.discordapp.com/attachments/1196607675224572054/1196607711387856976/Poppins-Regular.ttf?ex=65b83ec6&is=65a5c9c6&hm=396a1ffc575dddae43f6627b3feabfe027bdefc6cd7775f5eef6a0048658b707&);
+}
+
+.border-1 {
+    border-width: 1px;
+}
+
+.border-salmon {
+    --tw-border-opacity: 1;
+    border-color: rgb(250 128 114 / var(--tw-border-opacity));
+}
+
+.shadow-salmon {
+    --tw-shadow-color: #fa8072;
+    --tw-shadow: var(--tw-shadow-colored);
+}
+
+.bg-salmon {
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 128 114 / var(--tw-bg-opacity));
+}
+
+.keliling-animation {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: draw 2s forwards ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 1;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.luas-animation {
+    animation: appear 2s forwards ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
